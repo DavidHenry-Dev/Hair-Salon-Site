@@ -1,18 +1,225 @@
-/* Box Model Hack */
 * {
     box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+/* Header and Nav */
+body {
+    margin: 0 auto;
+    font-size: 62.5%;
+}
+li,a {
+    text-decoration: none;
+    list-style: none;
+}
+nav {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.clear {
-   clear: both;
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 80%;
+    
+}
+
+nav li a{
+    color: black;
+    font-size: .8rem;
+}
+
+main {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url("https://res.cloudinary.com/djlowrayn/image/upload/v1645448980/hairSalon/main_ly7lqb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+main h1 { 
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0 0 0 0;
+}
+
+.headline {
+    margin-left: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.headline span {
+    font-size: 1rem;
+}
+
+.headline button {
+    height: 35px;
+    width: 125px;
+    margin: 30px 0 0 0;
+    background: #000;
+    color: #fff;
+}
+
+.headline button a {
+    color: #fff;
+}
+
+.bookNow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.75;
+    background: black;
+    margin: 50px 0 0 100px;
+    width: 175px;
+}
+
+.bookNow button {
+    height: 35px;
+    width: 100px;
+}
+
+.bookNow button a {
+    color: black;
+}
+
+/* Info and 2nd section */
+
+.infoSect {
+    height: 300px;
+    padding: 0 10% 0 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.infoSect section {
+    padding: 0 15px;
+}
+
+.infoSect img {
+    height: 75px;
+    width: 100px;
+}
+
+/* video and 3rd section */
+
+.vidSect {
+    height: 300px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background: rgb(243, 243, 243);
+}
+
+.vidSect section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 30%;
+}
+.vidSect h2 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.vidSect p {
+    font-size: .9rem;
+}
+
+.vidSect button {
+    height: 40px;
+    width: 150px;
+    background: #000;;
+}
+
+.vidSect button a {
+    color:#fff;
+}
+
+.vidSect section img{
+    height: 200px;
+    width: 90%;
+}
+
+.stylistSect {
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stylistSect img {
+    height: 300px;
+ 
+}
+
+.offerSect {
+    height: 250px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.offerSect section{
+    height: 300px;
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #EFEDEE;
+}
+
+.offerSect span {
+    font-size: .75rem;
+}
+
+.offerSect p {
+    font-size: 1.4rem;
+   
+}
+
+.offerSect button {
+    font-size: .6rem;
+    background: black;
+    height: 40px;
+    width: 160px;
+}
+
+.offerSect button a {
+    color: white;
+}
+
+.offerSect img {
+    height: 300px;
+    justify-content: right;
+}
+
+/* Gallery Section */
+
+.gallerySect {
+    height: 600px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallerySect img {
+    height: 550px;
 }
