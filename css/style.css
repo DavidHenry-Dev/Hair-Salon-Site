@@ -174,15 +174,15 @@ main h1 {
    width:  30rem;
 }
 
-.stylistSect {
+.stylistSect .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .stylistSect img {
-    height: 300px;
+   width: 20rem;
 }
 
 .offerSect {
